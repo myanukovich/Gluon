@@ -1,28 +1,19 @@
-.. gluon documentation master file, created by
-   sphinx-quickstart on Thu Jan 30 15:29:49 2020.
+.. Read the Docs Template documentation master file, created by
+   sphinx-quickstart on Tue Aug 26 14:19:49 2014.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Gluon documentation
-=====================================
+Welcome to Read the Docs Template's documentation!
+==================================================
 
-Gluon это p2p платформа для обмена токенов между различными блокчейнами при контроле сделки со стороны сети валидаторов. 
-
-[Gluon это on-chain протокол для обмена токенов между различными блокчейнами. Обмен происходит напрямую между пользователями без посредников. Обмен конролируется в смарт-контракте. Валидацией операций обмена и контролем смарт-контракта занимается сеть валидаторов. Обмен гарантируется страховым депозитом со стороны исполнителя обмена. Общий размер страхового депозита находящего на смарт-контракте отображает общую ликвидность платформы.]
-
-
-	1. Исполнитель блокирует страховой депозит, чем гарантирует исполнение сделки на размер страхового депозита
-	2. Заказчик переводить токены прямо на адрес исполнителя
-	3. Когда исполнитель завершит обмен, сеть валидаторов проверит сделку и разблокирует страховой депозит
-
-
+Contents:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :glob:
 
-  entities
-  members
+   *
+
 
 
 Indices and tables
@@ -31,3 +22,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
