@@ -4,3 +4,7 @@
 * [detailed](detailed.md)
 * [Untitled](untitled.md)
 
+## technical
+
+* [Untitled](technical/untitled.md)
+
