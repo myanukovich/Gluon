@@ -6,6 +6,16 @@ description: детальное описание системы
 
 Схема взаимодействий между разными блокчейнами:
 
+## Titles
+
+
+
+
+
+
+
+{% page-ref page="detailed.md" %}
+
 * frontend
 * ethereum
 * **sidechain**
