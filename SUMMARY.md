@@ -1,8 +1,8 @@
 # Table of contents
 
 * [index](README.md)
-* [detailed](detailed.md)
 * [Overview](untitled.md)
+* [detailed](detailed.md)
 * [API](api.md)
 
 ## technical

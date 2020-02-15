@@ -129,11 +129,11 @@ Source currency amount to exchangecurrency
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+estimated amount
 {% endapi-method-response-example-description %}
 
 ```
-
+0
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -165,11 +165,11 @@ Destination currency
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+minimum allowed payin amount required for a currency pair \(from/to\)
 {% endapi-method-response-example-description %}
 
 ```
-
+0
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -209,11 +209,13 @@ User payout address to recieve destination currency amount
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+transaction hash
 {% endapi-method-response-example-description %}
 
 ```
-
+{
+  "tx": "string"
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -273,11 +275,11 @@ Returns API version
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+API version string 'x.y.z'
 {% endapi-method-response-example-description %}
 
 ```
-
+string
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
