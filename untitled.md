@@ -16,7 +16,7 @@ Gluon внешне являясь по своей сути обычном обм
 
 Кто-угодно так же может стать исполнителем заказов на обмен токенов, получая комиссию с обмена. Для этого он реализует свою Relay систему для взаимодействия со смарт-контактами системы.
 
-Взаимная согласованность участников системы позволяет системе действовать в децентрализованном режиме. Это согласованность реализуется через механизмы доступные в блокчейне и близкие к идеи radical markets и design mechanism.
+Взаимная согласованность участников системы позволяет системе действовать в децентрализованном режиме. Это согласованность реализуется через механизмы доступные в блокчейне и близкие к идеям radical markets и [mechanism design](https://en.wikipedia.org/wiki/Mechanism_design).
 
 ### Дизайн системы позволяет реализовать некоторые особенности. 
 
@@ -55,7 +55,7 @@ Gluon внешне являясь по своей сути обычном обм
 
 Количество денег находящихся в DeFi превысило 1 млрд. долларов.
 
-![&#x41A;&#x43E;&#x43B;&#x438;&#x447;&#x435;&#x441;&#x442;&#x432;&#x43E; &#x434;&#x435;&#x43D;&#x435;&#x433; &#x43D;&#x430;&#x445;&#x43E;&#x434;&#x44F;&#x449;&#x435;&#x433;&#x43E; &#x432; DeFi](.gitbook/assets/image%20%283%29.png)
+![&#x41A;&#x43E;&#x43B;&#x438;&#x447;&#x435;&#x441;&#x442;&#x432;&#x43E; &#x434;&#x435;&#x43D;&#x435;&#x433; &#x43D;&#x430;&#x445;&#x43E;&#x434;&#x44F;&#x449;&#x435;&#x433;&#x43E; &#x432; DeFi](.gitbook/assets/image%20%281%29.png)
 
 Объемы торгов на бирже Uniswap заметно растут в последнее время и доходят до до 5 млн. долларов в день.
 
@@ -67,7 +67,127 @@ Gluon внешне являясь по своей сути обычном обм
 
 Сервис удовлетворяет всем требованиям DeFi, является полностью opensource проектом, вся прибыль распределяется между участниками проекта. 
 
-Выпуск токенов проекта происходит через механизм DAO, подобный проекту MolochDAO. Нету
 
 
+## Техническая часть
+
+### API для подключения к Gluon с клиентской стороны
+
+Используется набор функций сходный с функциями обычного обменника.
+
+Техническая документация и playground для тестов [http://dc.quantbrothers.com/index.html\#/](http://dc.quantbrothers.com/index.html#/)
+
+{% api-method method="get" host="http://dc.quantbrothers.com/index.html" path="\#/exchange/get\_exchange\_announcementStatus" %}
+{% api-method-summary %}
+announcementStatus
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Returns status of a given announcement using a transaction hash provided.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="Tx" type="string" required=true %}
+transaction hash
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+list of exchange orders with states
+{% endapi-method-response-example-description %}
+
+```
+[
+  {
+    "announced_source_amount": 0,
+    "authority_order_status": "accepted",
+    "collateral": 0,
+    "deposited_destination_amount": 0,
+    "deposited_source_amount": 0,
+    "destination_accept_height": 0,
+    "destination_address": "string",
+    "destination_currency": "string",
+    "error_message": "string",
+    "min_destination_amount": 0,
+    "order_source_amount": 0,
+    "signature": [
+      0
+    ],
+    "source_accept_height": 0,
+    "source_address": "string",
+    "source_currency": "string"
+  }
+]
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="/exchange/currencies" path="" %}
+{% api-method-summary %}
+/exchange/currencies
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Returns a list of supported currencies as a flat array
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="" path="" %}
+{% api-method-summary %}
+/exchange/estimatedExchangeAmount
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Returns estimated exchange value with your API partner fee included.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="From" required=true type="string" %}
+Source currency
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+![](.gitbook/assets/image.png)
+
+​
 
