@@ -1,11 +1,12 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Overview](overview.md)
-* [Detailed](detailed.md)
-* [API](api.md)
+* [DeFi & Onchain swap](overview.md)
 
-## technical
+## Documentation <a id="technical"></a>
 
+* [Detailed Schemes](technical/detailed.md)
+* [Entities](technical/entities.md)
+* [Exchange API](technical/api.md)
 * [Untitled](technical/untitled.md)
 

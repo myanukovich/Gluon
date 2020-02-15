@@ -2,7 +2,7 @@
 description: Техническая часть
 ---
 
-# API
+# Exchange API
 
 ### API для подключения к Gluon с клиентской стороны
 

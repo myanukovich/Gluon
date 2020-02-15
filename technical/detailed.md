@@ -2,15 +2,15 @@
 description: детальное описание системы
 ---
 
-# Detailed
+# Detailed Schemes
 
 Общее представление системы
 
 
 
-![](.gitbook/assets/main-scheme.png)
+![](../.gitbook/assets/main-scheme.png)
 
-![](.gitbook/assets/tendermint.png)
+![](../.gitbook/assets/tendermint.png)
 
 
 
