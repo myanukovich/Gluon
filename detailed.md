@@ -4,6 +4,18 @@ description: детальное описание системы
 
 # detailed
 
+Общее представление системы
+
+
+
+![](.gitbook/assets/main-scheme.png)
+
+![](.gitbook/assets/tendermint.png)
+
+
+
+
+
 Схема взаимодействий между разными блокчейнами:
 
 ![Sequence Diagram](https://lh4.googleusercontent.com/WiXEgiAO8WZR1Mk6xyR5IrcSE4-rpc8jnfZ6YANSBR-93zUpppMrHjvJ8GtJv0qCvwYHSH2NCz7VlbKrBCVnbWRjCAlKFjHhR8am4PR1rjlaxDH12zle13WIEccUlq5kbgbLmcTj)

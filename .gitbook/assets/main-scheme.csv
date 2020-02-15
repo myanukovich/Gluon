@@ -1,0 +1,17 @@
+Id,Name,Shape Library,Page ID,Contained By,Group,Line Source,Line Destination,Source Arrow,Destination Arrow,Text Area 1
+1,Page,,,,,,,,,Page 1
+2,Rectangle,Geometric Shapes,1,,,,,,,Client
+3,Diamond,Geometric Shapes,1,,,,,,,Ethereum Smart-Contract
+4,Circle,Geometric Shapes,1,,,,,,,Relayer
+5,Circle,Geometric Shapes,1,,,,,,,Relayer
+6,Circle,Geometric Shapes,1,,,,,,,Relayer
+7,Circle,Geometric Shapes,1,,,,,,,Relayer
+8,Hexagon,Geometric Shapes,1,,16,,,,,
+9,Rectangle,Geometric Shapes,1,,16,,,,,Tendermint Validator Network
+10,Line,,1,,,2,3,None,Arrow,
+11,Line,,1,,,4,3,None,Arrow,
+12,Line,,1,,,5,3,None,Arrow,
+13,Line,,1,,,6,3,None,Arrow,
+14,Line,,1,,,7,3,None,Arrow,
+15,Line,,1,,,8,3,None,Arrow,
+16,Group 1,,1,,,,,,,
