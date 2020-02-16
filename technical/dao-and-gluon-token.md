@@ -20,6 +20,7 @@
 
 * комиссия системы берётся с заблокированного страхового депозита
 * комиссия накапливается в fee deposit и может быть получена валидатор в любой момент
+* алгоритм начисления комиссий без пробега по всем стейкерам описан в статье [Scalable Reward Distribution on the Ethereum Blockchain](http://batog.info/papers/scalable-reward-distribution.pdf). Данный алгоритм не подразумевает возможность обновления баланса после занесения токенов. В [следующем примере](https://medium.com/@weka/dividend-bearing-tokens-on-ethereum-42d01c710657) описана такая возможность.
 
 ##  Gluon Parameters
 

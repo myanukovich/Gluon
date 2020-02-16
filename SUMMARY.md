@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [DeFi & Onchain swap](overview.md)
+* [DeFi & Onchain swaps](overview.md)
 
 ## Documentation <a id="technical"></a>
 
@@ -9,5 +9,8 @@
 * [Entities](technical/entities.md)
 * [DAO and Gluon Token](technical/dao-and-gluon-token.md)
 * [Exchange API](technical/api.md)
-* [Interface](technical/interface.md)
+
+## Frontend
+
+* [Interface](frontend/interface.md)
 
