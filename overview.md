@@ -1,12 +1,12 @@
 ---
-description: обзор DeFi и существующих решений onchain swaps
+description: обзор похода в разработке Gluon
 ---
 
-# DeFi & Onchain swaps
+# DeFi & Onchain swap
 
 ### Обзор DeFi
 
-В последнее время наблюдается сильный взлёт сектора криптоэкономики связанного с Decentralized Finance \(DeFi\). 
+В последнее время наблюдается сильный взлёт сектора криптоэкономики связанного с DecentralizeFinance \(DeFi\). 
 
 Количество денег находящихся в DeFi превысило 1 млрд. долларов.
 
@@ -20,10 +20,6 @@ description: обзор DeFi и существующих решений onchain 
 
 ### Текущий подход к Onchain swap
 
-На данный момент существует большое множество сервисов обмена криптовалют, но все они реализованы через централизованную часть. 
-
-Децентрализованные обменники используют подход AtomicSwap. Для этого реализовываются Hashed Timelock Contracts, что связано с высокой сложностью и трудностью проверки на уязвимость, что вызывается недоверие к таким решениями.
-
 {% embed url="https://medium.com/@OAX\_Foundation/tl-dr-atomic-swaps-cross-chain-swaps-on-chain-off-chain-f428512e1d2a" %}
 
 {% embed url="https://blockgeeks.com/guides/atomic-swaps/" %}
@@ -31,6 +27,8 @@ description: обзор DeFi и существующих решений onchain 
 {% embed url="https://hackernoon.com/are-there-any-dexs-with-a-good-cross-chain-mechanism-wg1od316l" %}
 
 
+
+> На данный момент существует большое множество сервисов обмена криптовалют, но все они реализованы через централизованную часть. Децентрализованные обменники используют подход AtomicSwap что заставляет их вмешиваться в устройство каждого блокчейна к которому они подключаются.
 
 
 
