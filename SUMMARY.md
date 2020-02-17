@@ -5,7 +5,7 @@
 
 ## Documentation <a id="technical"></a>
 
-* [Schemes](technical/detailed.md)
+* [Schemes](technical/schemes.md)
 * [Entities](technical/entities.md)
 * [DAO and Gluon Token](technical/dao-and-gluon-token.md)
 * [Exchange API](technical/api.md)
