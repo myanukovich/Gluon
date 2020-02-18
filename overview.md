@@ -18,8 +18,6 @@ description: обзор DeFi и существующих решений onchain 
 
 Растёт кол-во проектов
 
-![Ethereum&apos;s DeFi](.gitbook/assets/image%20%287%29.png)
-
 
 
 ![The financial system builds itself on top of what is available.](.gitbook/assets/image%20%282%29.png)
