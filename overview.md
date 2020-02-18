@@ -14,7 +14,17 @@ description: обзор DeFi и существующих решений onchain 
 
 Объемы торгов на бирже Uniswap заметно растут в последнее время и доходят до 5 млн. долларов в день.
 
-![&#x41E;&#x431;&#x44A;&#x451;&#x43C;&#x44B; &#x442;&#x43E;&#x440;&#x433;&#x43E;&#x432; &#x43D;&#x430; uniswap &#x431;&#x438;&#x440;&#x436;&#x435;](.gitbook/assets/image%20%288%29.png)
+![&#x41E;&#x431;&#x44A;&#x451;&#x43C;&#x44B; &#x442;&#x43E;&#x440;&#x433;&#x43E;&#x432; &#x43D;&#x430; uniswap &#x431;&#x438;&#x440;&#x436;&#x435;](.gitbook/assets/image%20%2810%29.png)
+
+Растёт кол-во проектов
+
+![Ethereum&apos;s DeFi](.gitbook/assets/image%20%287%29.png)
+
+
+
+![The financial system builds itself on top of what is available.](.gitbook/assets/image%20%282%29.png)
+
+{% embed url="https://medium.com/coinmonks/network-effects-in-an-open-financial-world-251152b9467d" %}
 
 
 
