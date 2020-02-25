@@ -9,6 +9,7 @@
 * [Entities](technical/entities.md)
 * [DAO and Gluon Token](technical/dao-and-gluon-token.md)
 * [Exchange API](technical/api.md)
+* [Fee](technical/fee.md)
 
 ## Frontend
 
