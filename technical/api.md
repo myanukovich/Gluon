@@ -8,7 +8,7 @@ description: Техническая часть
 
 Используется набор функций сходный с функциями обычного обменника.
 
-Техническая документация и playground для тестов [http://dc.quantbrothers.com/index.html\#/](http://dc.quantbrothers.com/index.html#/)
+Техническая документация и playground для тестов [http://api.quantbrothers.com](http://dc.quantbrothers.com)
 
 {% api-method method="get" host="http://dc.quantbrothers.com/index.html" path="\#/exchange/get\_exchange\_announcementStatus" %}
 {% api-method-summary %}
