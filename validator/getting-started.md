@@ -45,3 +45,50 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 go version go1.13.3 linux/amd64
 ```
 
+### Шаг 2. Загрузка и сборка валидатора
+
+```text
+yum update
+yum install -y git
+yum groupinstall -y 'Development Tools'
+```
+
+```text
+cd ~
+git clone -b stable https://github.com/quantbrothers/dex.git
+```
+
+```text
+cd ~/dex/authority
+./build-standalone.sh MAINNET
+```
+
+```text
+ls -la ./bin
+total 87076
+drwxrwxr-x.  2 fpv fpv       47 Feb 28 08:44 .
+drwxrwxr-x. 11 fpv fpv      216 Feb 28 08:32 ..
+-rwxrwxr-x.  1 fpv fpv 19753256 Feb 28 09:15 dexcli
+-rwxrwxr-x.  1 fpv fpv 32518072 Feb 28 09:15 dexsvc
+-rwxrwxr-x.  1 fpv fpv 36892096 Feb 28 09:15 vnode
+```
+
+Шаг 3. Конфигурирование и запуск валидатора
+
+```text
+mkdir ~/vnode
+cd ~/vnode
+mkdir ~/vnode/config
+mkdir ~/vnode/data
+```
+
+```text
+~/dex/authority/bin/vnode init
+Initalize node configuration files
+I[2020-02-28|09:21:53.003] Generated private validator                  keyFile=config/priv_validator_key.json stateFile=data/priv_validator_state.json
+I[2020-02-28|09:21:53.003] Generated node key                           path=config/node_key.json
+I[2020-02-28|09:21:53.003] Generated genesis file                       path=config/genesis.json
+```
+
+
+
