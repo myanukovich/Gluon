@@ -16,3 +16,8 @@
 
 * [Interface](frontend/interface.md)
 
+## Validator
+
+* [Getting Started](validator/getting-started.md)
+* [Command line](validator/command-line.md)
+
