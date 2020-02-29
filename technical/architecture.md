@@ -1,5 +1,5 @@
 ---
-description: детальное описание системы
+description: Детальное описание системы
 ---
 
 # Architecture
