@@ -150,14 +150,14 @@ laddr = "tcp://0.0.0.0:26657"
 
 Далее нам понадобится keystore файл с ключем Ethereum адреса, от которого будут подписываться сертификаты. Этот же адрес должен быть владельцем минимального необходимого для валидации Gluon токенов. Создать новый keystore файл можно, например при помощи популярного сервиса [MyEtherWallet](https://www.myetherwallet.com)
 
-Для работы валидатора понадобится доступ к сети Ethereum по стандартному [DApps REST API](https://github.com/ethereum/wiki/wiki/JSON-RPC), для этого необходими подключиться к любой full-node на базе parity, geth или любому full-node сервису например Infura.
+Для работы валидатора понадобится доступ к сети Ethereum по стандартному [DApps REST API](https://github.com/ethereum/wiki/wiki/JSON-RPC), для этого необходими подключиться к любой full-node на базе parity, geth или любому другому сервису, например Infura.
 
 ```text
 ethereum_node = "<ethereum node RPC address>"
 eth_keystore_file = "27bd836595b708956046e127a1fe5c70a08dd7c3.json" # keysore файл 
 ```
 
-Это все! Теперь можно запустить сервис
+Это все! Теперь можно запустить нашего валидатора
 
 ```text
 ~/dex/authority/bin/vnode --config=./config/node.toml
@@ -183,7 +183,7 @@ cd ~/dex/authority
 ./build-standalone.sh MAINNET
 ```
 
-Далее вносим изменения в конфигурацию, эсли это указано в Change Log и запускаем сервис
+Далее вносим изменения в конфигурацию, если это указано в Change Log и запускаем сервис
 
 ```text
 ~/dex/authority/bin/vnode --config=./config/node.toml
