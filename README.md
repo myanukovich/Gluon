@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: обзор Gluon системы
+description: Обзор Gluon системы
 ---
 
 # Introduction
