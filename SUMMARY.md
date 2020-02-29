@@ -5,7 +5,7 @@
 
 ## Documentation <a id="technical"></a>
 
-* [Schemes](technical/schemes.md)
+* [Architecture](technical/architecture.md)
 * [Doublechain consensus](technical/doublechain-consensus.md)
 * [Entities](technical/entities.md)
 * [DAO and Gluon Token](technical/dao-and-gluon-token.md)

@@ -2,7 +2,7 @@
 description: детальное описание системы
 ---
 
-# Schemes
+# Architecture
 
 ## General Exchange Scheme
 
