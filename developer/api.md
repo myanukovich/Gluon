@@ -1,14 +1,16 @@
 ---
-description: Техническая часть
+description: Доступ к функциональности обменника по обычному REST API
 ---
 
 # Exchange API
 
 ## API для подключения к Gluon с клиентской стороны
 
-Используется набор функций сходный с функциями обычного обменника.
+Система Gluon базируется на Ethereum смарт-контракте, взаимодейтсвие с котороым может осуществляться посредством протокола Web3. Для чтения состояния заказов используется Tendermint API сети валидаторов.
 
-Техническая документация и playground для тестов [http://api.quantbrothers.com](http://dc.quantbrothers.com)
+В случае, если наиболее удобным способом подключения является использование REST API, существует вспомогательный сервис dexsvc. Данный сервис предоставляет набор методов, схожий с API обычных централизованных обменников.
+
+Пример такого API и Playground доступен по адресу [http://api.quantbrothers.com](http://dc.quantbrothers.com)
 
 {% api-method method="get" host="http://dc.quantbrothers.com/index.html" path="\#/exchange/get\_exchange\_announcementStatus" %}
 {% api-method-summary %}
