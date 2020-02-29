@@ -58,7 +58,7 @@ yum groupinstall -y 'Development Tools'
 
 ```text
 cd ~
-git clone -b stable https://github.com/quantbrothers/dex.git
+git clone -b stable https://github.com/gluon-dex/gluon
 ```
 
 Переходим в каталог утилит для работы с сетью валидации и запускаем срипт для сборки. Параметр MAINNET означает, что наш сервис будет собран для работы с сетью Ethereum mainnet.
