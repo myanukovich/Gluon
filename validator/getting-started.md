@@ -23,6 +23,12 @@ description: Описание процесса развертывания узл
 
 Устанавливаем переменный среды. Для работы golang компилятора требуется настроить переменные **GOROOT**, **GOPATH** и прописаться в **PATH**
 
+Создаем каталог для пакетов golang
+
+```text
+# mkdir $HOME/go
+```
+
 Вашим любимым редатором открываем файл ~/.bashrc и добавляем в конец файла строки:
 
 ```text
@@ -64,7 +70,7 @@ git clone -b stable https://github.com/gluon-dex/gluon
 Переходим в каталог утилит для работы с сетью валидации и запускаем срипт для сборки. Параметр MAINNET означает, что наш сервис будет собран для работы с сетью Ethereum mainnet.
 
 ```text
-cd ~/dex/authority
+cd ~/gluon/authority
 ./build-standalone.sh MAINNET
 ```
 
@@ -99,7 +105,7 @@ mkdir ~/vnode/data
 Создадим новые ключи и файл конфигурации используя команду init
 
 ```text
-~/dex/authority/bin/vnode init
+~/gluon/authority/bin/vnode init
 Initalize node configuration files
 I[2020-02-28|09:21:53.003] Generated private validator                  keyFile=config/priv_validator_key.json stateFile=data/priv_validator_state.json
 I[2020-02-28|09:21:53.003] Generated node key                           path=config/node_key.json
@@ -160,7 +166,7 @@ eth_keystore_file = "27bd836595b708956046e127a1fe5c70a08dd7c3.json" # keysore ф
 Это все! Теперь можно запустить нашего валидатора
 
 ```text
-~/dex/authority/bin/vnode --config=./config/node.toml
+~/gluon/authority/bin/vnode --config=./config/node.toml
 Enter Ethereum keystore passphrase: ********
 
 I[2020-02-28|19:56:55.193] Version info                                 module=main software=0.32.7 block=10 p2p=7
@@ -178,7 +184,7 @@ I[2020-02-28|19:56:55.520] Authority node started                       module=m
 Обновляем и пересобираем проект
 
 ```text
-cd ~/dex/authority
+cd ~/gluon/authority
 ./git pull
 ./build-standalone.sh MAINNET
 ```
@@ -186,7 +192,7 @@ cd ~/dex/authority
 Далее вносим изменения в конфигурацию, если это указано в Change Log и запускаем сервис
 
 ```text
-~/dex/authority/bin/vnode --config=./config/node.toml
+~/gluon/authority/bin/vnode --config=./config/node.toml
 Enter Ethereum keystore passphrase: ********
 
 I[2020-02-28|19:56:55.193] Version info                                 module=main software=0.32.7 block=10 p2p=7
